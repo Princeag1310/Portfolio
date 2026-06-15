@@ -144,8 +144,8 @@ export const Projects: React.FC = () => {
             }}
           >
             <motion.div
-              animate={{ y: [0, -15, 0] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              animate={{ y: [0, -30, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
               style={{
                 width: '80px',
                 height: '80px',

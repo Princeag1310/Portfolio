@@ -29,8 +29,8 @@ export const Hero: React.FC = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 0 40px rgba(0, 242, 254, 0.6)',
-              border: '4px solid #fff',
+              boxShadow: '0 0 50px rgba(0, 242, 254, 0.4)',
+              border: '2px solid rgba(0, 242, 254, 0.5)',
               overflow: 'hidden'
             }}
           >
@@ -40,9 +40,9 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            style={{ fontSize: '3.5rem', marginBottom: '8px', fontWeight: 800, color: '#fff' }}
+            style={{ fontSize: '4rem', marginBottom: '12px', fontWeight: 800, color: '#fff', letterSpacing: '-1px' }}
           >
-            Hi, I am <span className="neon-text">Prince Agrawal</span>
+            Hi, I'm <span style={{ color: '#00f2fe', textShadow: '0 0 20px rgba(0, 242, 254, 0.4)' }}>Prince Agrawal</span>
           </motion.h1>
           
           <div style={{ fontSize: '1.8rem', fontWeight: 600, marginBottom: '24px', color: '#a855f7', minHeight: '40px' }}>
