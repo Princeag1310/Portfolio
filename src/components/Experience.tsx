@@ -11,7 +11,7 @@ const timelineData = [
     description: 'Working on full-stack software development tasks and contributing to real-world engineering projects.',
     icon: <FaBriefcase />,
     link: 'https://drive.google.com/file/d/1i3JLR0eSk9Z6Ik90J1tO0S2d-GYZ0QIP/view?usp=sharing',
-    buttonText: 'OFFER LETTER'
+    buttonText: 'CERTIFICATE'
   },
   {
     id: 2,

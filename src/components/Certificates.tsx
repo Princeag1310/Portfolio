@@ -34,14 +34,6 @@ const experiences = [
     description: "Successfully merged multiple pull requests across popular React and Next.js repositories during Hacktoberfest 2025.",
     buttonText: "View Certificate",
     link: "https://drive.google.com/file/d/1RUtervePIjmKkO2abBPFq_hTkmLGXZJP/view?usp=sharing"
-  },
-  {
-    id: 'hackathon',
-    title: 'Hackathon Finalist',
-    icon: <FaMedal />,
-    description: "Reached the finals in a national level hackathon for developing a real-time collaborative application.",
-    buttonText: "View Details",
-    link: "#"
   }
 ];
 
@@ -154,7 +146,7 @@ export const Certificates: React.FC = () => {
         </div>
         
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
-          <a href="https://drive.google.com/file/d/1Jx0ZtQi_Waw1XEC5Rx14zRMCREWTpqIC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)', padding: '16px 40px' }}>
+          <a href="https://drive.google.com/drive/folders/14HrAHWLoUgGzNDBnHs_dpox066HKnVp9?usp=sharing" target="_blank" rel="noopener noreferrer" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)', padding: '16px 40px' }}>
             View All Certificates
           </a>
         </div>
