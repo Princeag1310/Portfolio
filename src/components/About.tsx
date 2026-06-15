@@ -29,11 +29,16 @@ export const About: React.FC = () => {
              </motion.div>
              <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(254, 9, 121, 0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
                <h3 style={{ color: '#fe0979', marginBottom: '12px', fontSize: '1.3rem' }}>Experience</h3>
-               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>Open Source Developer<br/><span style={{ color: 'var(--text-secondary)' }}>Hacktoberfest 2025</span></p>
+               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>
+                 Software Engineering Intern<br/>
+                 <span style={{ color: 'var(--text-secondary)' }}>JMK Spares and Wears</span><br/><br/>
+                 Open Source Developer<br/>
+                 <span style={{ color: 'var(--text-secondary)' }}>Hacktoberfest 2025</span>
+               </p>
              </motion.div>
              <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(168, 85, 247, 0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
                <h3 style={{ color: '#a855f7', marginBottom: '12px', fontSize: '1.3rem' }}>Achievements</h3>
-               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>LeetCode Guardian (2180)<br/>CodeChef 4★ (1822)<br/>10/10 SGPA</p>
+               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>LeetCode Guardian (2180)<br/>CodeChef 4★ (1822)<br/>10/10 SGPA (in 4th sem)</p>
              </motion.div>
           </div>
         </div>
