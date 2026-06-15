@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaTrophy, FaCode, FaAward, FaLaptopCode, FaMedal, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaTrophy, FaCode, FaAward, FaLaptopCode, FaExternalLinkAlt } from 'react-icons/fa';
 
 const experiences = [
   {
