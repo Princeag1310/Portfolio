@@ -4,9 +4,9 @@ import {
   SiJavascript, SiTypescript, SiPython, SiCplusplus, SiReact, SiNextdotjs, 
   SiTailwindcss, SiRedux, SiNodedotjs, SiExpress, 
   SiPostgresql, SiMongodb, SiPrisma, SiSocketdotio, SiFirebase, SiJsonwebtokens, 
-  SiVercel, SiGit, SiGithub, SiDocker, SiGooglegemini
+  SiVercel, SiGit, SiGithub, SiDocker, SiGooglegemini, SiLinux
 } from 'react-icons/si';
-import { FaJava, FaAws, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { FaJava, FaAws, FaCss3Alt, FaHtml5, FaNetworkWired, FaDatabase, FaCodeBranch } from 'react-icons/fa';
 
 const skillCategories = [
   {
@@ -41,6 +41,15 @@ const skillCategories = [
       { name: "Socket.io", icon: <SiSocketdotio color="#ffffff" /> },
       { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
       { name: "JWT", icon: <SiJsonwebtokens color="#ffffff" /> }
+    ]
+  },
+  {
+    title: "Core Fundamentals",
+    skills: [
+      { name: "OOPs", icon: <FaCodeBranch color="#f05032" /> },
+      { name: "DBMS", icon: <FaDatabase color="#4facfe" /> },
+      { name: "Operating Systems", icon: <SiLinux color="#FCC624" /> },
+      { name: "Computer Networks", icon: <FaNetworkWired color="#a855f7" /> }
     ]
   },
   {
@@ -82,7 +91,7 @@ export const Skills: React.FC = () => {
                 {category.skills.map((skill) => (
                   <motion.div 
                     key={skill.name} 
-                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.1)' }}
+                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.1)', boxShadow: '0 0 15px rgba(0, 242, 254, 0.5)' }}
                     style={{ 
                       display: 'flex', 
                       flexDirection: 'column', 
@@ -96,7 +105,13 @@ export const Skills: React.FC = () => {
                       transition: 'all 0.3s ease'
                     }}
                   >
-                    <div style={{ fontSize: '2rem' }}>{skill.icon}</div>
+                    <motion.div 
+                      whileHover={{ rotate: [0, -15, 15, -15, 0], scale: 1.2 }}
+                      transition={{ duration: 0.4 }}
+                      style={{ fontSize: '2.2rem' }}
+                    >
+                      {skill.icon}
+                    </motion.div>
                     <span style={{ fontSize: '0.85rem', color: '#fff', fontWeight: 500, textAlign: 'center' }}>
                       {skill.name}
                     </span>

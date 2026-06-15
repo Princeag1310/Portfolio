@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';
@@ -21,21 +21,20 @@ export const Hero: React.FC = () => {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 200, damping: 20, delay: 0.5 }}
             style={{ 
-              width: '120px', 
-              height: '120px', 
+              width: '150px', 
+              height: '150px', 
               borderRadius: '50%', 
               background: 'linear-gradient(135deg, #00f2fe, #fe0979)',
               margin: '0 auto 24px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '3.5rem',
-              color: '#fff',
-              boxShadow: '0 0 40px rgba(0, 242, 254, 0.6), inset 0 0 20px rgba(254, 9, 121, 0.6)',
-              border: '2px solid #fff'
+              boxShadow: '0 0 40px rgba(0, 242, 254, 0.6)',
+              border: '4px solid #fff',
+              overflow: 'hidden'
             }}
           >
-            PA
+            <img src="https://github.com/Princeag1310.png" alt="Prince Agrawal" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
@@ -77,8 +76,8 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             style={{ display: 'flex', gap: '20px', justifyContent: 'center', marginBottom: '40px' }}
           >
-            <a href="#projects" className="glass-button primary">
-              View My Projects <ArrowRight size={18} />
+            <a href="/resume.pdf" download className="glass-button primary">
+              <FileText size={18} /> Download Resume
             </a>
             <a href="#contact" className="glass-button">
               Contact Me
