@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef } from 'react-icons/si';
 import { TypeAnimation } from 'react-type-animation';

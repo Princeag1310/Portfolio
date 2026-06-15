@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText } from 'lucide-react';
+
 
 export const About: React.FC = () => {
   return (
