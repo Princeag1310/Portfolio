@@ -35,19 +35,6 @@ const projects = [
     live: "https://omni-reach-one.vercel.app/" 
   },
   {
-    title: "Second Brain",
-    description: "A high-performance full-stack web application designed to help you organize your digital life. Save links, embed videos, store tweets, and securely share your curated content library.",
-    tech: [
-      { name: "React", icon: <SiReact color="#61DAFB" /> },
-      { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-      { name: "Tailwind", icon: <SiTailwindcss color="#06B6D4" /> },
-      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> }
-    ],
-    github: "https://github.com/Princeag1310/Second-Brain",
-    live: "https://second-brainee.vercel.app/" 
-  },
-  {
     title: "FoodieReels",
     description: "An immersive short-form video and image platform designed specifically for food lovers and restaurant partners to explore the best meals, hottest restaurants, and tastiest dishes.",
     tech: [
@@ -72,6 +59,19 @@ const projects = [
     ],
     github: "https://github.com/Princeag1310/collabdraw",
     live: "https://collabdraws.vercel.app/" 
+  },
+  {
+    title: "Second Brain",
+    description: "A high-performance full-stack web application designed to help you organize your digital life. Save links, embed videos, store tweets, and securely share your curated content library.",
+    tech: [
+      { name: "React", icon: <SiReact color="#61DAFB" /> },
+      { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+      { name: "Tailwind", icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
+      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> }
+    ],
+    github: "https://github.com/Princeag1310/Second-Brain",
+    live: "https://second-brainee.vercel.app/" 
   }
 ];
 
