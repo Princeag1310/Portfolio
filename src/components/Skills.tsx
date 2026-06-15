@@ -1,22 +1,58 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { 
+  SiJavascript, SiTypescript, SiPython, SiCplusplus, SiReact, SiNextdotjs, 
+  SiTailwindcss, SiRedux, SiNodedotjs, SiExpress, 
+  SiPostgresql, SiMongodb, SiPrisma, SiSocketdotio, SiFirebase, SiJsonwebtokens, 
+  SiVercel, SiGit, SiGithub, SiDocker, SiGooglegemini
+} from 'react-icons/si';
+import { FaJava, FaAws, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["JavaScript", "TypeScript", "Python", "Java", "C/C++", "SQL"]
+    skills: [
+      { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+      { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+      { name: "Python", icon: <SiPython color="#3776AB" /> },
+      { name: "Java", icon: <FaJava color="#007396" /> },
+      { name: "C/C++", icon: <SiCplusplus color="#00599C" /> }
+    ]
   },
   {
     title: "Frontend",
-    skills: ["React.js", "Next.js", "Tailwind CSS", "shadcn/ui", "Redux", "HTML5/CSS3"]
+    skills: [
+      { name: "React.js", icon: <SiReact color="#61DAFB" /> },
+      { name: "Next.js", icon: <SiNextdotjs color="#ffffff" /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: "Redux", icon: <SiRedux color="#764ABC" /> },
+      { name: "HTML5", icon: <FaHtml5 color="#E34F26" /> },
+      { name: "CSS3", icon: <FaCss3Alt color="#1572B6" /> }
+    ]
   },
   {
     title: "Backend & Databases",
-    skills: ["Node.js", "Express.js", "PostgreSQL", "MongoDB", "Prisma ORM", "Socket.io", "Firebase", "JWT"]
+    skills: [
+      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
+      { name: "Express.js", icon: <SiExpress color="#ffffff" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
+      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
+      { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
+      { name: "Socket.io", icon: <SiSocketdotio color="#ffffff" /> },
+      { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
+      { name: "JWT", icon: <SiJsonwebtokens color="#ffffff" /> }
+    ]
   },
   {
     title: "AI & Tools",
-    skills: ["Google Gemini AI", "RAG Pipelines", "OCR", "AWS SES/SNS", "Git/GitHub", "Docker/CI-CD", "Vercel"]
+    skills: [
+      { name: "Gemini AI", icon: <SiGooglegemini color="#8E75B2" /> },
+      { name: "AWS", icon: <FaAws color="#FF9900" /> },
+      { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+      { name: "Vercel", icon: <SiVercel color="#ffffff" /> },
+      { name: "Git", icon: <SiGit color="#F05032" /> },
+      { name: "GitHub", icon: <SiGithub color="#ffffff" /> }
+    ]
   }
 ];
 
@@ -30,23 +66,41 @@ export const Skills: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <h2>Technical Skills</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
           {skillCategories.map((category, idx) => (
             <motion.div
               key={category.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="glass-panel"
-              style={{ padding: '24px' }}
+              style={{ padding: '30px', borderColor: 'rgba(254, 9, 121, 0.2)' }}
             >
-              <h3 style={{ marginBottom: '16px', fontSize: '1.2rem', color: '#fff' }}>{category.title}</h3>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                {category.skills.map(skill => (
-                  <span key={skill} style={{ background: 'rgba(255,255,255,0.1)', padding: '6px 14px', borderRadius: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                    {skill}
-                  </span>
+              <h3 style={{ marginBottom: '24px', fontSize: '1.4rem', color: '#fff', textAlign: 'center' }}>{category.title}</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px' }}>
+                {category.skills.map((skill) => (
+                  <motion.div 
+                    key={skill.name} 
+                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.1)' }}
+                    style={{ 
+                      display: 'flex', 
+                      flexDirection: 'column', 
+                      alignItems: 'center', 
+                      gap: '8px',
+                      background: 'rgba(0,0,0,0.3)', 
+                      padding: '12px', 
+                      borderRadius: '12px', 
+                      cursor: 'pointer',
+                      border: '1px solid rgba(255,255,255,0.05)',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    <div style={{ fontSize: '2rem' }}>{skill.icon}</div>
+                    <span style={{ fontSize: '0.85rem', color: '#fff', fontWeight: 500, textAlign: 'center' }}>
+                      {skill.name}
+                    </span>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

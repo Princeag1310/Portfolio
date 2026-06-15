@@ -1,5 +1,4 @@
-
-import { AuroraBackground } from './components/AuroraBackground';
+import { ParticleBackground } from './components/ParticleBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -10,7 +9,7 @@ import { Contact } from './components/Contact';
 function App() {
   return (
     <>
-      <AuroraBackground />
+      <ParticleBackground />
       <Navbar />
       <main>
         <Hero />
