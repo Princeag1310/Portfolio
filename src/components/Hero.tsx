@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
               overflow: 'hidden'
             }}
           >
-            <img src="/photo.png" alt="Prince Agrawal" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/photo.png" alt="Prince Agrawal" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
           </motion.div>
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
