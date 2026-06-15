@@ -3,74 +3,75 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaAws, FaExternalLinkAlt } from 'react-icons/fa';
 import { 
   SiReact, SiNextdotjs, SiTypescript, SiPostgresql, SiPrisma, SiGooglegemini, 
-  SiNodedotjs, SiSocketdotio, SiExpress, SiMongodb, SiTailwindcss, SiRedis 
+  SiNodedotjs, SiSocketdotio, SiExpress, SiMongodb, SiTailwindcss
 } from 'react-icons/si';
 
 const projects = [
   {
-    title: "CureCart (AI Healthcare)",
-    description: "A full-stack healthcare platform featuring an intelligent health assistant built with Google Gemini AI. Optimized PostgreSQL schemas with Prisma for 10,000+ records and implemented an AI-driven OCR pipeline.",
+    title: "CureCart",
+    description: "A next-generation healthcare e-commerce platform integrating a robust digital pharmacy with an AI health assistant (Gemini & Tavily) for verified medical data and real-time guidance.",
     tech: [
       { name: "Next.js", icon: <SiNextdotjs /> },
       { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
       { name: "Tailwind", icon: <SiTailwindcss color="#06B6D4" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> },
       { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
       { name: "Gemini AI", icon: <SiGooglegemini color="#8E75B2" /> }
     ],
     github: "https://github.com/Princeag1310/CureCart",
-    live: "https://curecart-frontend-omega.vercel.app"
+    live: "https://cure--cart.vercel.app/"
   },
   {
-    title: "OmniReach SaaS",
-    description: "A scalable email marketing SaaS alternative to Mailchimp. Built real-time delivery tracking via Socket.io and AWS SES/SNS webhooks alongside a node-cron job scheduler.",
+    title: "OmniReach",
+    description: "A comprehensive campaign outreach platform enabling users to manage contacts, execute targeted email/SMS campaigns, and monitor performance in real-time with AI-powered template generation.",
     tech: [
       { name: "React", icon: <SiReact color="#61DAFB" /> },
       { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
       { name: "Express", icon: <SiExpress /> },
       { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
       { name: "AWS", icon: <FaAws color="#FF9900" /> },
-      { name: "Socket.io", icon: <SiSocketdotio /> },
-      { name: "Redis", icon: <SiRedis color="#DC382D" /> }
+      { name: "Socket.io", icon: <SiSocketdotio /> }
     ],
     github: "https://github.com/Princeag1310/OmniReach",
-    live: "https://omnireach.vercel.app" 
+    live: "https://omni-reach-one.vercel.app/" 
   },
   {
-    title: "FoodieReels",
-    description: "An Instagram-style food discovery REST API. Embedded an infinite-scroll timeline with Fisher-Yates deduplication and a Gemini AI chatbot. Dual-tenant RBAC with ImageKit.",
-    tech: [
-      { name: "React", icon: <SiReact color="#61DAFB" /> },
-      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
-      { name: "Express", icon: <SiExpress /> },
-      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
-      { name: "Gemini AI", icon: <SiGooglegemini color="#8E75B2" /> }
-    ],
-    github: "https://github.com/Princeag1310/foodie-reels",
-    live: "https://foodie-reels.vercel.app"
-  },
-  {
-    title: "CollabDraw",
-    description: "A real-time collaborative whiteboard application allowing multiple users to draw, brainstorm, and interact simultaneously on a shared canvas.",
+    title: "Second Brain",
+    description: "A high-performance full-stack web application designed to help you organize your digital life. Save links, embed videos, store tweets, and securely share your curated content library.",
     tech: [
       { name: "React", icon: <SiReact color="#61DAFB" /> },
       { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-      { name: "Socket.io", icon: <SiSocketdotio /> }
+      { name: "Tailwind", icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
+      { name: "MongoDB", icon: <SiMongodb color="#47A248" /> }
     ],
-    github: "https://github.com/Princeag1310/collabdraw",
-    live: "https://collabdraw-beta.vercel.app" 
+    github: "https://github.com/Princeag1310/Second-Brain",
+    live: "https://second-brainee.vercel.app/" 
   },
   {
-    title: "Brainly",
-    description: "A collaborative knowledge-sharing application that empowers students to ask questions and find answers quickly.",
+    title: "FoodieReels",
+    description: "An immersive short-form video and image platform designed specifically for food lovers and restaurant partners to explore the best meals, hottest restaurants, and tastiest dishes.",
     tech: [
       { name: "React", icon: <SiReact color="#61DAFB" /> },
       { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
       { name: "Express", icon: <SiExpress /> },
       { name: "MongoDB", icon: <SiMongodb color="#47A248" /> }
     ],
-    github: "https://github.com/Princeag1310/Brainly",
-    live: "https://brainly-app.vercel.app" 
+    github: "https://github.com/Princeag1310/foodie-reels",
+    live: "https://foodiereels.vercel.app/"
+  },
+  {
+    title: "CollabDraw",
+    description: "A real-time collaborative drawing application built for seamless teamwork, allowing multiple users to join a shared room and draw together on a digital canvas.",
+    tech: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "Tailwind", icon: <SiTailwindcss color="#06B6D4" /> },
+      { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
+      { name: "Socket.io", icon: <SiSocketdotio /> },
+      { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql color="#4169E1" /> }
+    ],
+    github: "https://github.com/Princeag1310/collabdraw",
+    live: "https://collabdraws.vercel.app/" 
   }
 ];
 
