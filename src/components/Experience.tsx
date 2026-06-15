@@ -8,35 +8,40 @@ const experiences = [
     title: 'Flipkart GRID Challenge',
     icon: <FaTrophy />,
     description: "Semifinalist in Flipkart's national-level engineering challenge.",
-    buttonText: "View Certificate"
+    buttonText: "View Certificate",
+    link: "https://drive.google.com/file/d/1Jx0ZtQi_Waw1XEC5Rx14zRMCREWTpqIC/view?usp=sharing"
   },
   {
     id: 'graph',
     title: 'Graph Theory Programming Camp',
     icon: <FaCode />,
     description: "Participated in an intensive programming camp focused on advanced graph theory algorithms and competitive programming techniques.",
-    buttonText: "View Certificate"
+    buttonText: "View Certificate",
+    link: "https://drive.google.com/file/d/14TYxGVlLW8NNEWQ6kxzD9ib_bIm4lsgk/view?usp=sharing"
   },
   {
     id: 'adobe',
     title: 'Adobe Hackathon',
     icon: <FaLaptopCode />,
     description: "Competed in the Adobe Hackathon, building innovative solutions and presenting to industry experts.",
-    buttonText: "View Certificate"
+    buttonText: "View Certificate",
+    link: "https://drive.google.com/file/d/1jLqyb5t-hKwCp_7L8TCvihc0gxWmpaTH/view?usp=sharing"
   },
   {
     id: 'opensource',
     title: 'Open Source Contribution',
     icon: <FaAward />,
     description: "Successfully merged multiple pull requests across popular React and Next.js repositories during Hacktoberfest 2025.",
-    buttonText: "View Profile"
+    buttonText: "View Certificate",
+    link: "https://drive.google.com/file/d/1RUtervePIjmKkO2abBPFq_hTkmLGXZJP/view?usp=sharing"
   },
   {
     id: 'hackathon',
     title: 'Hackathon Finalist',
     icon: <FaMedal />,
     description: "Reached the finals in a national level hackathon for developing a real-time collaborative application.",
-    buttonText: "View Details"
+    buttonText: "View Details",
+    link: "#"
   }
 ];
 
@@ -139,7 +144,7 @@ export const Experience: React.FC = () => {
                   {activeTab.description}
                 </p>
                 
-                <a href="#" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)' }}>
+                <a href={activeTab.link} target="_blank" rel="noopener noreferrer" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)' }}>
                   <FaExternalLinkAlt size={16} /> {activeTab.buttonText}
                 </a>
               </motion.div>
@@ -149,7 +154,7 @@ export const Experience: React.FC = () => {
         </div>
         
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '40px' }}>
-          <a href="#" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)', padding: '16px 40px' }}>
+          <a href="https://drive.google.com/file/d/1Jx0ZtQi_Waw1XEC5Rx14zRMCREWTpqIC/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="glass-button" style={{ borderColor: 'rgba(168, 85, 247, 0.5)', padding: '16px 40px' }}>
             View All Certificates
           </a>
         </div>
