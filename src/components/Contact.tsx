@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
           
           {/* Left Column */}
           <div style={{ flex: '1 1 400px' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '16px', color: '#a855f7', textAlign: 'left' }}>Connect Across Space</h2>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '16px', color: '#a855f7', textAlign: 'left' }}>Connect Across Universe</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '40px', fontSize: '1.1rem', lineHeight: '1.6' }}>
               Initiate a direct transmission to my terminal through any of these communication channels.
             </p>
