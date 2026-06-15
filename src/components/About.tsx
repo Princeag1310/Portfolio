@@ -15,17 +15,11 @@ export const About: React.FC = () => {
         <div className="glass-panel" style={{ padding: '40px', display: 'flex', flexDirection: 'column', gap: '30px', borderColor: 'rgba(0, 242, 254, 0.2)' }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <p style={{ fontSize: '1.2rem', color: '#fff', lineHeight: '1.8', fontWeight: 300 }}>
-              I am a B.Tech student in Electrical and Electronics Engineering at <span style={{ color: '#00f2fe', fontWeight: 500 }}>ABV-IIITM Gwalior</span> (CGPA: 9.42/10.0). I have a strong foundation in competitive programming and full-stack web development.
+              I am a <span style={{ color: '#00f2fe', fontWeight: 500 }}>B.Tech student</span> in Electrical and Electronics Engineering at <span style={{ color: '#00f2fe', fontWeight: 500 }}>ABV-IIITM Gwalior</span> (CGPA: 9.42/10.0). I have a strong foundation in <span style={{ color: '#00f2fe', fontWeight: 500 }}>competitive programming</span> and <span style={{ color: '#00f2fe', fontWeight: 500 }}>full-stack web development</span>.
             </p>
             <p style={{ fontSize: '1.2rem', color: '#fff', lineHeight: '1.8', fontWeight: 300 }}>
-              Highly passionate about problem-solving, I am a <span style={{ color: '#fe0979', fontWeight: 500 }}>Guardian on LeetCode</span> (Rating: 2180) and a <span style={{ color: '#fe0979', fontWeight: 500 }}>4-star coder on CodeChef</span> (Rating: 1822). Beyond algorithms, I am an active Open Source Contributor, having merged multiple PRs across popular React and Next.js repositories during Hacktoberfest 2025.
+              Highly passionate about problem-solving, I am a <span style={{ color: '#fe0979', fontWeight: 500 }}>Guardian on LeetCode</span> (Rating: 2180) and a <span style={{ color: '#fe0979', fontWeight: 500 }}>4-star coder on CodeChef</span> (Rating: 1822). Beyond algorithms, I am an active <span style={{ color: '#a855f7', fontWeight: 500 }}>Open Source Contributor</span>, having merged multiple PRs across popular React and Next.js repositories during <span style={{ color: '#a855f7', fontWeight: 500 }}>Hacktoberfest 2025</span>.
             </p>
-          </div>
-          
-          <div style={{ marginTop: '10px' }}>
-            <a href="/resume.pdf" download className="glass-button primary" style={{ display: 'inline-flex', padding: '14px 30px', fontSize: '1rem' }}>
-              <FileText size={20} /> Download Resume
-            </a>
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px', marginTop: '20px' }}>

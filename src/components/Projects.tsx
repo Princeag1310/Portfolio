@@ -123,19 +123,46 @@ export const Projects: React.FC = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-        
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '60px' }}>
-          <motion.a 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://github.com/Princeag1310" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="glass-button" 
-            style={{ padding: '16px 40px', fontSize: '1.1rem' }}
+
+          {/* View More on GitHub Card */}
+          <motion.a
+            href="https://github.com/Princeag1310"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center', 
+              justifyContent: 'center', 
+              textDecoration: 'none',
+              padding: '32px',
+              minHeight: '200px'
+            }}
           >
-            <FaGithub size={24} /> View More on GitHub
+            <motion.div
+              animate={{ y: [0, -15, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              style={{
+                width: '80px',
+                height: '80px',
+                borderRadius: '50%',
+                background: 'rgba(20,20,30,0.8)',
+                boxShadow: '0 0 30px rgba(168, 85, 247, 0.2), inset 0 0 10px rgba(255,255,255,0.05)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginBottom: '24px'
+              }}
+            >
+              <FaGithub size={40} color="#fff" />
+            </motion.div>
+            <h3 style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+              View more on GitHub <span style={{ marginLeft: '4px' }}>→</span>
+            </h3>
           </motion.a>
         </div>
       </motion.div>
