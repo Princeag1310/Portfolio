@@ -1,0 +1,167 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez (Modified)
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{customgreen}{RGB}{34,139,34}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{amssymb}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.6in}
+
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{-1pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSingleSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Prince Agrawal} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ 8265819270 ~
+    \href{mailto:princeagrawal1013@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{princeagrawal1013@gmail.com}} ~
+    \href{https://prince-agrawal.vercel.app/}{\raisebox{-0.2\height}\faGlobe\ \underline{Portfolio}} ~
+    \href{https://linkedin.com/in/prince-agrawal-}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} ~
+    \href{https://github.com/Princeag1310}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}}
+    ~
+\href{https://leetcode.com/u/princeagrawal1013/}{\raisebox{-0.2\height}\faCode\ \underline{LeetCode}} ~
+\href{https://www.codechef.com/users/prince_agrawal}{\raisebox{-0.2\height}\faCode\ \underline{CodeChef}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Information Technology and Management, Gwalior}{Aug 2023 -- May 2027}
+    {Bachelors of Technology (B.Tech) in Electrical and Electronics Engineering}{\textbf{CGPA:} 9.42/10.0}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSingleSubheading
+    {\href{https://drive.google.com/file/d/1i3JLR0eSk9Z6Ik90J1tO0S2d-GYZ0QIP/view?usp=sharing}{\textcolor{customgreen}{Software Engineering Intern --- JMK Spares and Wears}}}{May 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Architecting a full-stack \textbf{Demand Intelligence Platform} (Next.js, PostgreSQL, Python ML) for a 2,900+ client B2B manufacturer.}
+      \resumeItem{Engineering a \textbf{demand forecasting model} (LightGBM, XGBoost) to predict equipment wear-life and restock timelines.}
+      \resumeItem{Building a \textbf{RAG-powered AI Assistant} (Gemini) to instantly map unstructured customer technical queries to industrial SKUs.}
+      \resumeItem{Automating the B2B sales pipeline by integrating the \textbf{WhatsApp Business API} and PDF quote generation (\textbf{pdf-lib}) into a custom CRM.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\href{https://github.com/Princeag1310/CureCart}{\textcolor{customgreen}{\textbf{CureCart}}} $|$ \emph{AI-Powered Healthcare Platform (Next.js, Prisma, Gemini AI)}}{May 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Developed a full-stack healthcare e-commerce platform (\textbf{Next.js 15}, \textbf{TypeScript}); implemented \textbf{SSR} and Edge caching, reducing load times by \textbf{40\%} and achieving a \textbf{95+} Lighthouse score.}
+      \resumeItem{Integrated \textbf{Gemini AI} and a \textbf{RAG pipeline} (Tavily Search API) for an intelligent health assistant, cutting zero-result queries by \textbf{60\%} with hallucination-free responses.}
+      \resumeItem{Optimized \textbf{PostgreSQL} schemas via \textbf{Prisma ORM} for 10,000+ records; improved query performance by \textbf{35\%} using advanced pagination and indexing.}
+      \resumeItem{Engineered an \textbf{AI-driven OCR pipeline} for sub-2s prescription verification and deployed responsive \textbf{Tailwind CSS} components via \textbf{Vercel CI/CD}.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://github.com/Princeag1310/OmniReach}{\textcolor{customgreen}{\textbf{OmniReach}}} $|$ \emph{SaaS Email Marketing (React, Node.js, AWS, Socket.io)}}{Mar. 2026 -- Apr. 2026}
+    \resumeItemListStart
+      \resumeItem{Architected a scalable \textbf{email marketing SaaS} (\textbf{React}, \textbf{Node.js}), integrating \textbf{Gemini AI} to automate dynamic HTML email template generation.}
+      \resumeItem{Orchestrated real-time delivery tracking via \textbf{Socket.io} and \textbf{AWS SES}, ensuring high deliverability rates and instant campaign status updates.}
+      \resumeItem{Configured \textbf{AWS SNS} webhooks to automatically process bounce and complaint metadata alongside seamless 1-click unsubscribe logic.}
+      \resumeItem{Automated deferred dispatches using a \textbf{node-cron} job scheduler with \textbf{MongoDB} persistence to parse \textbf{CSV} streams and compute 7-day analytic charts.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\href{https://github.com/Princeag1310/foodie-reels}{\textcolor{customgreen}{\textbf{FoodieReels}}} $|$ \emph{Food Discovery Web App (React, Express.js, MongoDB)}}{Mar. 2026 -- Apr. 2026}
+    \resumeItemListStart
+      \resumeItem{Constructed an Instagram-style food discovery \textbf{REST API} (\textbf{React}, \textbf{Express}, \textbf{MongoDB}) featuring a \textbf{Gemini AI} recommendation chatbot.}
+      \resumeItem{Implemented an infinite-scroll timeline, dual-tenant \textbf{RBAC} (\textbf{JWT}), and \textbf{ImageKit CDN} for optimized media delivery.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  \textbf{Languages:} JavaScript, TypeScript, Python, Java, C/C++, SQL \\
+  \textbf{Frontend:} React.js, Next.js, Redux, Tailwind CSS, shadcn/ui, HTML5, CSS3 \\
+  \textbf{Backend:} Node.js, Express.js, RESTful APIs, Firebase, WebSockets, Socket.io, JWT \\
+  \textbf{Databases:} MongoDB, Mongoose ODM, PostgreSQL, Prisma ORM \\
+  \textbf{AI \& ML:} Google Gemini AI, RAG Pipelines, OCR, Prompt Engineering, Tavily API \\
+  \textbf{Tools:} Git/GitHub, AWS SES/SNS, Vercel, Postman, Figma, Android Studio, CI/CD \\
+  \textbf{CS Fundamentals:} Data Structures, Algorithms, OOP, DBMS, Computer Networks, OS \\
+}}
+\end{itemize}
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements / Extracurricular}
+\begin{itemize}[leftmargin=0.15in, noitemsep, topsep=0pt]
+  \small{\item{Achieved \textbf{Global Rank 82} in \href{https://www.codechef.com/rankings/START240B?itemsPerPage=100&order=asc&page=1&sortBy=rank}{\textcolor{customgreen}{CodeChef Starters 240}} (May 2026); \textbf{4$\bigstar$} coder with highest rating \textbf{1822}.}}
+  \small{\item{\href{https://leetcode.com/contest/weekly-contest-506/}{\textcolor{customgreen}{Guardian}} on LeetCode with highest rating \textbf{2180}; secured \textbf{Rank 357} in Weekly Contest 505.}}
+  \small{\item{Scored \textbf{10/10 SGPA} in 4th Semester at ABV-IIITM Gwalior.}}
+  \small{\item{Completed \href{https://drive.google.com/file/d/14TYxGVlLW8NNEWQ6kxzD9ib_bIm4lsgk/view?usp=sharing}{\textcolor{customgreen}{Graphs Camp}} certification by \textbf{AlgoUniversity}.}}
+  \small{\item{Merged \textbf{6 Pull Requests} across open-source repositories during \href{https://drive.google.com/file/d/1RUtervePIjmKkO2abBPFq_hTkmLGXZJP/view?usp=sharing}{\textcolor{customgreen}{Hacktoberfest 2025}}.}}
+\end{itemize}
+
+\end{document}
