@@ -23,22 +23,22 @@ export const About: React.FC = () => {
           </div>
           
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '24px', marginTop: '20px' }}>
-             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.1)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-               <h3 style={{ color: '#fff', marginBottom: '12px', fontSize: '1.3rem' }}>Education</h3>
-               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.5' }}>ABV-IIITM Gwalior<br/>B.Tech in EEE<br/><span style={{ color: '#a0a0a0' }}>Aug 2023 - May 2027</span></p>
+             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(0, 242, 254, 0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+               <h3 style={{ color: '#00f2fe', marginBottom: '12px', fontSize: '1.3rem' }}>Education</h3>
+               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>ABV-IIITM Gwalior<br/>B.Tech in EEE<br/><span style={{ color: 'var(--text-secondary)' }}>Aug 2023 - May 2027</span></p>
              </motion.div>
-             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.1)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-               <h3 style={{ color: '#fff', marginBottom: '12px', fontSize: '1.3rem' }}>Experience</h3>
-               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.5' }}>
+             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(254, 9, 121, 0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+               <h3 style={{ color: '#fe0979', marginBottom: '12px', fontSize: '1.3rem' }}>Experience</h3>
+               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>
                  Software Engineering Intern<br/>
-                 <span style={{ color: '#a0a0a0' }}>JMK Spares and Wears</span><br/><br/>
+                 <span style={{ color: 'var(--text-secondary)' }}>JMK Spares and Wears</span><br/><br/>
                  Open Source Developer<br/>
-                 <span style={{ color: '#a0a0a0' }}>Hacktoberfest 2025</span>
+                 <span style={{ color: 'var(--text-secondary)' }}>Hacktoberfest 2025</span>
                </p>
              </motion.div>
-             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.1)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-               <h3 style={{ color: '#fff', marginBottom: '12px', fontSize: '1.3rem' }}>Achievements</h3>
-               <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.5' }}>LeetCode Guardian (2180)<br/>CodeChef 4★ (1822)<br/>10/10 SGPA (in 4th sem)</p>
+             <motion.div whileHover={{ y: -5 }} style={{ background: 'rgba(0,0,0,0.4)', padding: '24px', borderRadius: '16px', border: '1px solid rgba(168, 85, 247, 0.3)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+               <h3 style={{ color: '#a855f7', marginBottom: '12px', fontSize: '1.3rem' }}>Achievements</h3>
+               <p style={{ color: '#fff', fontSize: '1rem', lineHeight: '1.5' }}>LeetCode Guardian (2180)<br/>CodeChef 4★ (1822)<br/>10/10 SGPA (in 4th sem)</p>
              </motion.div>
           </div>
         </div>
